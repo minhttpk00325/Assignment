@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A61F184B-11A1-4FAB-88A6-BED9455D810C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>QuanLyBanHANG.My.MyApplication</StartupObject>
+    <RootNamespace>QuanLyBanHANG</RootNamespace>
+    <AssemblyName>QuanLyBanHANG</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>QuanLyBanHANG.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>QuanLyBanHANG.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DANGKYTHANHVIEN.Designer.vb">
+      <DependentUpon>DANGKYTHANHVIEN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DANGKYTHANHVIEN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DANGNHAP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DANGNHAP.Designer.vb">
+      <DependentUpon>DANGNHAP.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DOIMATKHAU.Designer.vb">
+      <DependentUpon>DOIMATKHAU.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DOIMATKHAU.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KHACHHANG.Designer.vb">
+      <DependentUpon>KHACHHANG.vb</DependentUpon>
+    </Compile>
+    <Compile Include="KHACHHANG.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LOAI.Designer.vb">
+      <DependentUpon>LOAI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LOAI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="QuanLyBanHangDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanLyBanHangDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QUANLYHANGHOA.Designer.vb">
+      <DependentUpon>QUANLYHANGHOA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="QUANLYHANGHOA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QUANLYCTHD.Designer.vb">
+      <DependentUpon>QUANLYCTHD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="QUANLYCTHD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QUANLYHOADON.Designer.vb">
+      <DependentUpon>QUANLYHOADON.vb</DependentUpon>
+    </Compile>
+    <Compile Include="QUANLYHOADON.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DANGKYTHANHVIEN.resx">
+      <DependentUpon>DANGKYTHANHVIEN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DANGNHAP.resx">
+      <DependentUpon>DANGNHAP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DOIMATKHAU.resx">
+      <DependentUpon>DOIMATKHAU.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KHACHHANG.resx">
+      <DependentUpon>KHACHHANG.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LOAI.resx">
+      <DependentUpon>LOAI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QUANLYHANGHOA.resx">
+      <DependentUpon>QUANLYHANGHOA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QUANLYCTHD.resx">
+      <DependentUpon>QUANLYCTHD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QUANLYHOADON.resx">
+      <DependentUpon>QUANLYHOADON.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="QuanLyBanHangDataSet.xsc">
+      <DependentUpon>QuanLyBanHangDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyBanHangDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuanLyBanHangDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuanLyBanHangDataSet.xss">
+      <DependentUpon>QuanLyBanHangDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\51b966ff63d0167465.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ParkShinHye30.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\there_s_a_world_hidden_within_our_own_by_silviya-d699ssz.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fix-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stainless_Steel_Akatsuki_by_UchihaItachi121.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stainless_Steel_Juin__Manga__by_UchihaItachi121.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stainless_Steel_Uchiha_Clan_by_UchihaItachi121.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mkt2-1-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
